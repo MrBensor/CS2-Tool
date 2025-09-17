@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titleTag">CS2 Float Calculator</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-row">
+            <h1 id="mainTitle"></h1>
+            <div class="lang-switch">
+                <label for="langSelect" id="langLabel"></label>
+                <select id="langSelect">
+                    <option value="en">🇺🇸 English</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                </select>
+            </div>
+        </div>
+        <div class="tabs">
+            <button type="button" class="tab-btn active" id="tabFloat"></button>
+            <button type="button" class="tab-btn" id="tabAvg"></button>
+        </div>
+        <div id="tabContentFloat" class="tab-content">
+            <form id="floatForm">
+                <h2 id="floatStep1"></h2>
+                <div id="floatInputs"></div>
+                <div id="wearRatings"></div>
+                <button type="button" id="calcAvgBtn"></button>
+                <div id="avgResult"></div>
+                <h2 id="floatStep2"></h2>
+                <label for="maxCap" id="maxCapLabel"></label>
+                <input type="number" step="any" id="maxCap" name="maxCap">
+                <label for="minCap" id="minCapLabel"></label>
+                <input type="number" step="any" id="minCap" name="minCap">
+                <button type="button" id="calcFloatBtn"></button>
+                <div id="finalFloatResult"></div>
+            </form>
+        </div>
+        <div id="tabContentAvg" class="tab-content" style="display:none">
+            <form id="avgForm">
+                <h2 id="avgStep2"></h2>
+                <label for="skinSearch" id="skinSearchLabel"></label>
+                <div class="search-container">
+                    <img id="selectedSkinImg" src="" alt="">
+                    <div style="flex:1;position:relative;">
+                        <input type="text" id="skinSearch" name="skinSearch" autocomplete="off" placeholder="">
+                        <div id="skinSuggestions" class="suggestions"></div>
+                    </div>
+                    <button type="button" id="filterButton" class="filter-button"></button>
+                </div>
+                <label for="targetFloat" id="targetFloatLabel"></label>
+                <select id="targetFloat" name="targetFloat">
+                    <option value="0.0699999" id="optFactoryNew"></option>
+                    <option value="0.1499999" id="optMinimalWear"></option>
+                    <option value="0.3799999" id="optFieldTested"></option>
+                    <option value="0.4499999" id="optWellWorn"></option>
+                    <option value="1.00" id="optBattleScarred"></option>
+                </select>
+                <label for="maxCap2" id="maxCap2Label"></label>
+                <input type="number" step="any" id="maxCap2" name="maxCap2" readonly>
+                <label for="minCap2" id="minCap2Label"></label>
+                <input type="number" step="any" id="minCap2" name="minCap2" readonly>
+                <button type="button" id="calcMaxAvgBtn"></button>
+                <div id="maxAvgResult"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Filter Popup -->
+    <div id="filterPopup" class="filter-popup">
+        <h3 id="filterPopupTitle"></h3>
+        
+        <div class="filter-section">
+            <h4 id="rarityFilterLabel"></h4>
+            <div id="rarityFilterOptions" class="filter-options"></div>
+        </div>
+        
+        <div class="filter-section">
+            <h4 id="collectionFilterLabel"></h4>
+            <div id="collectionFilterOptions" class="filter-options"></div>
+        </div>
+        
+        <div class="filter-buttons">
+            <button id="resetFilters"></button>
+            <button id="applyFilters"></button>
+            <button id="closeFilterPopup"></button>
+        </div>
+    </div>
+    <script src="js/lang.js"></script>
+    <script src="js/skins.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
