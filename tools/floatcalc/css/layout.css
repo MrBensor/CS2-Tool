@@ -1,0 +1,72 @@
+/* Layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.1em;
+    color: #7289da;
+    background: #181a1b;
+    border-radius: 6px;
+    padding: 4px 10px;
+    box-shadow: 0 1px 4px #23272a44;
+}
+
+#langSelect {
+    background: #23272a;
+    color: #fff;
+    border: 1.5px solid #7289da;
+    border-radius: 4px;
+    font-size: 1em;
+    padding: 2px 8px;
+    outline: none;
+}
+
+#langSelect:focus {
+    border: 1.5px solid #43b581;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tab-btn {
+    background: linear-gradient(90deg, #23272a 60%, #2c2f33 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.1em;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 3px solid transparent;
+    transition: background 0.2s, border-bottom 0.2s, color 0.2s;
+    letter-spacing: 1px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.tab-btn.active {
+    background: linear-gradient(90deg, #181a1b 60%, #23272a 100%);
+    border-bottom: 3px solid #43b581;
+    color: #43b581;
+}
+
+.tab-content {
+    display: block;
+    background: #181a1b;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 32px 26px 18px 26px;
+    margin-bottom: 20px;
+    font-size: 1.18em;
+}
