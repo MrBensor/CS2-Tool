@@ -5,7 +5,6 @@ header {
     align-items: center;
     margin-bottom: 18px;
 }
-
 .lang-switch {
     display: flex;
     align-items: center;
@@ -17,7 +16,6 @@ header {
     padding: 4px 10px;
     box-shadow: 0 1px 4px #23272a44;
 }
-
 #langSelect {
     background: #23272a;
     color: #fff;
@@ -27,18 +25,15 @@ header {
     padding: 2px 8px;
     outline: none;
 }
-
 #langSelect:focus {
     border: 1.5px solid #43b581;
 }
-
 .tabs {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
     gap: 10px;
 }
-
 .tab-btn {
     background: linear-gradient(90deg, #23272a 60%, #2c2f33 100%);
     color: #fff;
