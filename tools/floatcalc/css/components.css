@@ -1,0 +1,71 @@
+/* Components */
+label {
+    color: #b9bbbe;
+    font-size: 1.13em;
+    margin-top: 10px;
+    display: block;
+}
+
+#floatInputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 5px;
+    border: 1.5px solid #444;
+    background: #2c2f33;
+    color: #f1f1f1;
+    font-size: 1.18em;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+input[type="number"]:focus, select:focus {
+    border: 1.5px solid #43b581;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(90deg, #7289da 60%, #43b581 100%);
+    color: #fff;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.05em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(67,181,129,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #5b6eae 60%, #43b581 100%);
+    color: #23272a;
+}
+
+#avgResult, #finalFloatResult, #maxAvgResult {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #43b581;
+    font-size: 1.08em;
+    text-shadow: 0 1px 4px #23272a;
+}
+
+#selectedSkinImg {
+    width: 72px;
+    height: 56px;
+    min-height: 56px;
+    object-fit: contain;
+    border-radius: 7px;
+    display: none;
+    background: #181a1b;
+    border: 2px solid #23272a;
+}
