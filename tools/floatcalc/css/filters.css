@@ -1,0 +1,162 @@
+/* Filters & Skin Suggestions */
+.filter-button {
+    background: #43b581;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.filter-button:hover {
+    background: #3a9c6d;
+}
+
+.filter-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #23272a;
+    border: 2px solid #7289da;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.filter-popup h3 {
+    margin-top: 0;
+    color: #43b581;
+    border-bottom: 1px solid #43b581;
+    padding-bottom: 10px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #2c2f33;
+    border-radius: 4px;
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-option input[type="checkbox"] {
+    margin: 0;
+}
+
+.collection-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 3px;
+    margin-right: 6px;
+}
+
+#applyFilters {
+    background: #43b581;
+    color: white;
+    border: none;
+}
+
+#resetFilters {
+    background: #7289da;
+    color: white;
+    border: none;
+}
+
+#closeFilterPopup {
+    background: #f04747;
+    color: white;
+    border: none;
+}
+
+/* Skin Suggestions */
+#skinSuggestions {
+    background: #23272a;
+    border: 2px solid #7289da;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    max-height: 320px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 8px rgba(67,181,129,0.12);
+    display: none;
+}
+
+#skinSuggestions .suggestion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    border-bottom: 1px solid #2c2f33;
+    transition: background 0.15s;
+    font-weight: bold;
+}
+
+#skinSuggestions .suggestion:last-child {
+    border-bottom: none;
+}
+
+#skinSuggestions .suggestion:hover {
+    background: #7289da;
+    color: #23272a;
+}
+
+#skinSuggestions .skin-img {
+    width: 96px;
+    height: 72px;
+    min-height: 72px;
+    object-fit: contain;
+    border-radius: 5px;
+    background: #181a1b;
+    border: 1.5px solid #23272a;
+}
+
+#skinSuggestions .skin-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#skinSuggestions .skin-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+}
+
+#skinSuggestions .skin-float {
+    font-size: 0.95em;
+    color: #43b581;
+    font-weight: normal;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
