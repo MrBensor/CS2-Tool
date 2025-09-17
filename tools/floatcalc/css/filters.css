@@ -161,7 +161,7 @@
     gap: 10px;
 }
 #skinSearch {
-    width: calc(100% + 3.8px);
+    width: calc(100% + 4px);
     left: 14px;
     height: 56px;
     font-size: 1.18em;
